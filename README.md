@@ -14,9 +14,15 @@ This project provisions a **scalable, secure, and containerized AWS infrastructu
 │
 ├── main.tf              # Terraform main configuration file
 ├── variables.tf         # Variables used in Terraform scripts
+├── alb.tf               # Load balancer configuration in AWS
 ├── outputs.tf           # Output values after Terraform apply
-├── userdata.sh          # EC2 User Data script for Docker & app setup
-├── provider.tf          # AWS provider configuration
+├── route53.tf           # Domain setup for app deployment
+├── security_groups.tf   # Security groups for instances
+├── target_groups.tf     # Target groups after Terraform apply
+├── ec2.tf               # EC2 instances' creation configuration
+├── al2_userdata.sh      # EC2 User Data script for Docker & app setup
+├── bi_userdata.sh       # User Data script for BI tool (WIP)
+├── rds.tf               # RDS instances' creation configuration
 └── README.md            # Project documentation and setup instructions
 ```
 
